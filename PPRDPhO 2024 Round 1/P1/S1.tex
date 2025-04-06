@@ -1,0 +1,79 @@
+\noindent\textbf{1a.}
+\begin{equation*}
+  M=\frac{\pi r^{2}L}{2}(1+c)
+\end{equation*}
+\begin{equation*}
+  d=\frac{\dfrac{\pi r^{2}L}{2}\left(\dfrac{4r}{3\pi}-\dfrac{4r}{3\pi}c\right)}{\dfrac{\pi r^{2}L}{2}(1+c)}=\frac{4r}{3\pi}\left(\frac{1-c}{1+c}\right)
+\end{equation*}
+
+\noindent\textbf{1b.} Momen quán tính của một khối trụ đặc có khối lượng $M$ và bán kính $r$ là $\dfrac{1}{2}Mr^2$ do đó
+\begin{equation*}
+  I=\frac{1}{2}\left(\frac{\pi r^{2}L}{2}\right)(1+c)r^{2}=\frac{\pi r^{4}L}{4}(1+c)
+\end{equation*}
+
+\noindent\textbf{2.} Định luật II Newton cho
+\begin{equation*}
+  \tau=I\ddot{\theta}
+\end{equation*}
+momen lực đối với trục đối xứng là
+\begin{equation*}
+  \begin{gathered}
+    \tau=-Mgd\sin\theta \\
+    I\ddot{\theta}=-Mgd\sin\theta \\
+    \ddot{\theta}=-\frac{Mgd}{I}\sin\theta \\
+    \Rightarrow T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{I}{Mgd}}
+  \end{gathered}
+\end{equation*}
+
+\noindent\textbf{3a.} \\
+\noindent\underline{\textbf{Cách 1}}: Phương trình chuyển động của khối trụ đối với trục quay đi qua điểm tiếp xúc
+\begin{equation*}
+  \tau=I_{\text{con}}\ddot{\theta}
+\end{equation*}
+momen lực tác dụng lên khối trụ tương tự như ý trên
+\begin{equation*}
+  \tau = -Mgd\sin\theta\approx - M g d \theta
+\end{equation*}
+momen quán tính đối với trục quay qua điểm tiếp xúc được cho bởi
+\begin{equation*}
+  I_{\text{con}}=I_{cm}+M(r-d)^{2}
+\end{equation*}
+\begin{equation*}
+  I=I_{cm}+Md^{2}
+\end{equation*}
+\begin{equation*}
+  \Rightarrow I_{\text{con}}=I+M((r-d)^{2}-d^{2})=I+M(r^{2}-2rd)
+\end{equation*}
+\begin{equation*}
+  \Rightarrow\ddot{\theta}=-\frac{Mgd}{I_{con}}\theta
+\end{equation*}
+chu kì dao động
+\begin{equation*}
+  T=2\pi\sqrt{\frac{I_{con}}{Mgd}}=2\pi\sqrt{\frac{I+M(r^{2}-2rd)}{Mgd}}
+\end{equation*}
+có thể thấy, khi $d\rightarrow0$, chu kì $T\rightarrow0$.\\
+
+\noindent\underline{\textbf{Cách 2}}: Hàm Lagrange là
+\begin{equation*}
+  L=T-U=\frac{1}{2}I_{con}\dot{\theta}^2-\frac{1}{2}Mgd\theta^2
+\end{equation*}
+phương trình chuyển động được cho bởi
+\begin{equation*}
+  \begin{gathered}
+    \frac{d}{dt}\frac{\partial L}{\partial\theta}-\frac{\partial L}{\partial\theta}=0\Rightarrow I_{con}\ddot{\theta}+Mgd\theta=0 \\
+    \Rightarrow\ddot{\theta}=-\frac{Mgd}{I_{con}}\theta                                                                           \\
+    \Rightarrow T=2\pi\sqrt{\frac{I_{con}}{Mgd}}=2\pi\sqrt{\frac{I+M(r^{2}-2rd)}{Mgd}}
+  \end{gathered}
+\end{equation*}
+
+\noindent\textbf{3b.} Vì khối trụ chỉ có thể lăn không trượt, năng lượng của nó là bảo toàn. Để thoát khỏi sự dao động, khối trụ phải có đủ động năng để khối tâm có thể lên đến vị trí thế năng cực đại
+\begin{equation*}
+  \frac{1}{2}Mv_{cm}^{2}+\frac{1}{2}I_{cm}\omega_{0}^{2}+Mg(r-d)=Mg(r+d)
+\end{equation*}
+\begin{equation*}
+  \begin{gathered}
+    \Rightarrow\frac{1}{2}M\omega_{0}^{2}(r-d)^{2}+\frac{1}{2}(I-Md^{2})\omega_{0}^{2}=2Mgd \\
+    \Rightarrow\omega_{0}=\sqrt{\frac{4Mgd}{M(r-d)^{2}+(I-Md^{2})}}
+  \end{gathered}
+\end{equation*}
+có thể thấy, khi $d\rightarrow0$, $\omega_0\rightarrow0$, điều này có nghĩa không có bất kì cân bằng bền nào trong giới hạn này và khối trụ sẽ tiếp tục di chuyển về một phía.\\
