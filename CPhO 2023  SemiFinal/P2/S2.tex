@@ -1,0 +1,132 @@
+\noindent \textbf{1.} Giả sử piston chịu một tác động nhẹ và rời khỏi vị trí cân bằng một góc $\lvert\theta\rvert\ll 1$, phương trình chuyển động của piston là:
+\begin{equation}
+  \label{eq:21}
+  mr\frac{d^{2}\theta}{dt^{2}}=mg\sin\theta-\frac{nRT}{r(\pi/2=\theta)}+\frac{nRT}{r(\pi/2+\theta)}
+\end{equation}
+vì $\lvert\theta\rvert\ll 1$ nên:
+\begin{equation}
+  \label{eq:22}
+  \sin\theta\approx\theta-\frac{\theta^{3}}{6},\quad \frac{1}{\pi/2-\theta}\approx\frac{2}{\pi}+\frac{4}{\pi^{2}}\theta+\frac{8}{\pi^{3}}\theta^{2}+\frac{16}{\pi^{4}}\theta^{3},\quad \frac{1}{\pi/2+\theta}\approx\frac{2}{\pi}-\frac{4}{\pi^{2}}\theta+\frac{8}{\pi^{3}}\theta^{2}-\frac{16}{\pi^{4}}\theta^{3}
+\end{equation}
+nhờ đó, phương trình chuyển động của piston có thể được viết dưới dạng:
+\begin{equation}
+  \label{eq:23}
+  \frac{d^{2}\theta}{dt^{2}}=\frac{1}{r}\left(g-\frac{8nRT}{\pi^{2}rm}\right)\theta
+\end{equation}
+nếu piston cân bằng bền tại $\theta=0$ thì ta cần phải có:
+\begin{equation}
+  \label{eq:24}
+  g-\frac{8nRT}{\pi^{2}rm} < 0
+\end{equation}
+suy ra:
+\begin{equation}
+  \label{eq:25}
+  T>\frac{\pi^{2}mgr}{8nR}
+\end{equation}
+vậy nhiệt độ tới hạn là:
+\begin{equation}
+  \label{eq:26}
+  T_{C}=\frac{\pi^{2}mgr}{8nR}
+\end{equation}
+Lúc này, piston sẽ dao động điều hoà đơn giản quanh vị trí cân bằng, tần số góc là:
+\begin{equation}
+  \label{eq:27}
+  \omega=\sqrt{\frac{1}{r}\left(\frac{8nRT}{\pi^{2}rm}-g\right)}
+\end{equation}
+
+\noindent\textbf{2.} Khi $T=T_{C}$ phương trình \eqref{eq:21} có thể được đơn giản hoá bằng cách sử dụng phương trình \eqref{eq:23}:
+\begin{equation}
+  \label{eq:28}
+  \frac{d^{2}\theta}{dt^{2}}=-\frac{24+\pi^{2}}{6\pi^{2}}\frac{g}{r}\theta^{3}
+\end{equation}
+có thể thấy, piston chịu tác dụng của một lực phục hồi có độ lớn tỉ lệ với $\theta^{3}$, do đó vị trí cân bằng này là bền.\\
+
+\noindent\textbf{3.} Khi $T<T_{C}$, vị trí cân bằng của piston có thể nằm bên trái hoặc bên phải của ống thuỷ tinh, vị trí góc của nó khi đó là $\theta_{0}$, hợp lực tác dụng lên piston lúc này bằng không:
+\begin{equation}
+  \label{eq:29}
+  mg\sin\theta_{0}-\frac{nRT}{r(\pi/2-\theta_{0})}+\frac{nRT}{r(\pi/2+\theta_{0})}=0
+\end{equation}
+rút gọn ta được:
+\begin{equation}
+  \label{eq:210}
+  \frac{2nRT}{mgr}=\left(\frac{\pi^{2}}{4}-\theta_{0}^{2}\right)\frac{\sin\theta_{0}}{\theta_{0}}
+\end{equation}
+với $\theta_{0}\in\left(0,\dfrac{\pi}{2}\right)$ nên hàm số ở vế phải của phương trình \eqref{eq:210}: $f(\theta_{0})=\left(\frac{\pi^{2}}{4}-\theta_{0}^{2}\right)\dfrac{\sin\theta_{0}}{\theta_{0}}$ nghịch biến theo $\theta_{0}$; khi $\theta_{0}\rightarrow 0$, $f(\theta_{0})$ đạt giá trị lớn nhất. Điều kiện để phương trình \eqref{eq:210} có nghiệm khác không là:
+\begin{equation*}
+  T<\frac{\pi^{2}mgr}{8nR}
+\end{equation*}
+tức là $T<T_{C}$, điều này phù hợp với yêu cầu đề bài. Thay \eqref{eq:26} vào \eqref{eq:210} ta có:
+\begin{equation}
+  \label{eq:211}
+  \frac{T}{T_{C}}=\left(1-\frac{4\theta_{0}^{2}}{\pi^{2}}\right)\frac{\sin\theta_{0}}{\theta_{0}}
+\end{equation}
+khi nhiệt độ $T$ giảm nhẹ so với $T_{C}$, $\theta_{0}\approx 0$ và:
+\begin{equation}
+  \label{eq:212}
+  \frac{T}{T_{C}}\approx 1-\frac{24+\pi^{2}}{6\pi^{2}}\theta_{0}^{2}
+\end{equation}
+vì vây:
+\begin{equation}
+  \label{eq:213}
+  \theta_{0}=\pm \sqrt{\frac{6\pi^{2}}{24+\pi^{2}}\frac{T_{{C}-T}}{T_{{C}}}}
+\end{equation}
+dấu $\pm$ cho thấy vị trí cân bằng này có thể nằm bên trái hoặc bên phải ống thuỷ tinh.\\
+
+\noindent\textbf{4.} Khi piston dao động bé quanh vị trí cân bằng $\theta_{0}$, góc giữa nó và phương thẳng đứng là $\theta_{0}+\theta$, $\lvert\theta\rvert\ll 1$. Khi đó phương trình chuyển động của piston có dạng:
+\begin{equation}
+  \label{eq:214}
+  mr\frac{d^{2}\theta}{dt^{2}}=mg\sin(\theta_{0}+\theta)-\frac{nRT}{r(\pi/2-\theta_{0}-\theta)}+\frac{nRT}{r(\pi/2+\theta_{0}+\theta)}
+\end{equation}
+vì $\lvert\theta\rvert\ll 1$ nên ta có:
+\begin{equation}
+  \label{eq:215}
+  \sin(\theta_{0}+\theta)\approx\sin\theta_{0}+\theta\cos\theta_{0}
+\end{equation}
+\begin{equation}
+  \label{eq:216}
+  \frac{1}{\pi/2-\theta_{0}-\theta}\approx\frac{1}{\pi/2-\theta_{0}}+\frac{\theta}{(\pi/2-\theta_{0})^{2}}
+\end{equation}
+\begin{equation}
+  \label{eq:217}
+  \frac{1}{\pi/2+\theta_{0}+\theta}\approx\frac{1}{\pi/2+\theta_{0}}-\frac{\theta}{(\pi/2+\theta_{0})^{2}}
+\end{equation}
+do đó, phương trình chuyển động của piston quanh vị trí cân bằng là:
+\begin{equation}
+  \label{eq:218}
+  \frac{d^{2}\theta}{dt^{2}}=\frac{g\cos\theta_{0}}{r}\left[1-\frac{\tan\theta_{0}}{\theta_{0}}\frac{\pi^{2}/2+2\theta_{0}^{2}}{\pi^{2}/2-2\theta_{0}^{2}}\right]
+\end{equation}
+theo đó, piston sẽ dao động bé quanh vị trí cân bằng với tần số góc:
+\begin{equation}
+  \label{eq:219}
+  \omega_{0}=\sqrt{\frac{g\cos\theta_{0}}{r}\left[\frac{\tan\theta_{0}}{\theta_{0}}\frac{\pi^{2}/2+2\theta_{0}^{2}}{\pi^{2}/2-2\theta_{0}^{2}}-1\right]}
+\end{equation}
+khi $T<T_{C}$, ta có thể sử dụng phương trình \eqref{eq:26} và \eqref{eq:27}
+\begin{equation}
+  \label{eq:220}
+  \omega=\sqrt{\frac{g}{r}\left(\frac{8nRT}{\pi^{2}mgr}-1\right)}=\sqrt{\frac{g}{r}\frac{T-T_{C}}{T_{C}}}
+\end{equation}
+khi $T<T_{C}$, vì $T$ chỉ nhỏ hơn $T_{C}$ một chút, $\lvert\theta\rvert\ll 1$, khi đó tần số góc là
+\begin{equation}
+  \label{eq:221}
+  \omega\approx\sqrt{\frac{g}{r}\frac{24+\pi^{2}}{3\pi^{2}}\theta_{0}^{2}}=\sqrt{\frac{2g}{r}\frac{T_{C}-T}{T_{C}}}
+\end{equation}
+
+\noindent\textbf{5. } Gọi góc giữa piston và phương thẳng đứng là $\theta$, khi đó phương trình chuyển động của piston (chẳng hạn như phương trình \eqref{eq:21}) là:
+\begin{equation*}
+  mr\frac{d^{2}\theta}{dt^{2}}=mg\sin\theta-\frac{nRT}{r(\pi/2-\theta)}+\frac{nRT}{r(\pi/2+\theta)}
+\end{equation*}
+nhân cả hai vế của phương trình trên với $d\theta$ sau đó lấy tích phân ta được:
+\begin{equation}
+  \label{eq:222}
+  \int_{0}^{\theta}mr\dot{\theta}d\dot{\theta}=\int_{0}^{\theta}\left[mg\sin\theta-\frac{nRT}{r(\pi/2-\theta)}+\frac{nRT}{r(\pi/2+\theta)}\right]d\theta
+\end{equation}
+vì vận tốc ban đầu của piston xấp xỉ bằng không nên ta có:
+\begin{equation}
+  \label{eq:223}
+  \frac{1}{2}mr\dot{\theta}^{2}=mg(1-\cos\theta)+\frac{nRT}{r}\ln\left(1-\frac{4\theta^{2}}{\pi^{2}}\right)
+\end{equation}
+vận tốc góc của piston tại vị trí cuối $\theta$ là:
+\begin{equation}
+  \label{eq:224}
+  \lvert\dot{\theta}\rvert=\sqrt{\frac{2g}{r}(1-\cos\theta)+\frac{2nRT}{mr^{2}}\ln\left(1-\frac{4\theta^{2}}{\pi^{2}}\right)}
+\end{equation}

@@ -1,0 +1,124 @@
+\noindent\textbf{1.} Từ trường bên ngoài quả cầu là:
+\begin{equation}
+  \label{eq:61}
+  \vec{B}=\vec{B}_{e}+\vec{B}'=\vec{B}_{e}+\frac{\mu_{0}}{4\pi r^{3}}\left[3(\vec{m}\cdot\hat{r})\hat{r}-\vec{m}\right]
+\end{equation}
+đối với một vật dẫn lý tưởng, từ trương bên trong nó bằng không, mặt khác, theo định lý Gauss cho từ trường, thành phân theo phương pháp tuyến của từ trường là liên tục, do đó:
+\begin{equation}
+  \label{eq:62}
+  \hat{r}\cdot\vec{B}\vert_{r=a}=\hat{r}\cdot\vec{B}_{e}+\frac{\mu_{0}}{2\pi a^{3}}(\vec{m}\cdot\hat{r})=0
+\end{equation}
+do tính đối xứng, $\vec{m}$ phải song song hoặc phản song song với $\vec{B}_{e}$, theo đó, từ \eqref{eq:62} ta có:
+\begin{equation}
+  \label{eq:63}
+  \vec{m}=-\frac{2\pi a^{3}}{\mu_{0}}\vec{B}_{e}
+\end{equation}
+từ trường  bên ngoài là chồng chập của trường được tạo ra từ dòng điện từ hoá trên quả cầu (tương tự với từ trường tạo ra bởi lưỡng cực từ $\vec{m}$) và từ trường ngoài $\vec{B}_{e}$. Thay \eqref{eq:63} vào \eqref{eq:61} ta được:
+\begin{equation}
+  \label{eq:64}
+  \vec{B}=\vec{B}_{e}-\frac{a^{3}}{2r^{3}}\left[3(\vec{B}_{e}\cdot\hat{r})\hat{r}-\vec{B}_{e}\right]
+\end{equation}
+theo định lý Ampere, mật độ dòng điện trên bề mặt quả cầu được cho bởi:
+\begin{equation}
+  \label{eq:65}
+  \mu\vec{i}=\hat{r}\times\vec{B}\vert_{r=a}
+\end{equation}
+thay \eqref{eq:64} vào \eqref{eq:65} ta được:
+\begin{equation}
+  \label{eq:66}
+  \vec{i}=\hat{r}\times\frac{3\vec{B}_{e}}{2\mu_{0}}=\left(-\frac{3B_{e}}{2\mu_{0}\sin\theta}\right)\hat{\phi}
+\end{equation}
+
+\noindent\textbf{2.} Do tính đối xứng, cảm ứng từ do dòng điện trong dây dẫn tạo ra tại một điểm nằm trên trục đối xứng của nó có hướng dọc theo trục $Oz$. Sử dụng định luật Biot-Savart-Laplace, ta có:
+\begin{equation*}
+  \vec{B}=\frac{\mu_{0}I}{4\pi(b^{2}+h^{2})}\frac{b}{\sqrt{b^{2}+h^{2}}}2\pi b\hat{z}
+\end{equation*}
+hay:
+\begin{equation}
+  \label{eq:67}
+  \vec{B}=\left[\frac{\mu_{0}I_{0}b^{2}}{2(b^{2}+h^{2})^{3/2}}\cos\omega t\right]\hat{z}=B_{0}\cos\omega t\hat{z}
+\end{equation}
+trong đó:
+\begin{equation*}
+  B_{0}=\frac{\mu_{0}I_{0}b^{2}}{2(b^{2}+h^{2})^{3/2}}
+\end{equation*}
+
+\noindent\textbf{3.} Vì $a\ll b$ nên từ trường do vòng dây tạo ra ở khu vực gần quả cầu dẫn gần như là đều, xấp xỉ từ trường tại tâm quả cầu, được cho bởi phương trình \eqref{eq:67}. Và vì $b\ll a$, quả cầu dẫn có thể xem là lý tưởng và momen lưỡng cực từ của nó có thể tìm được từ phương trình \eqref{eq:63}:
+\begin{equation}
+  \label{eq:68}
+  \vec{m}=-\frac{2\pi a^{3}}{\mu_{0}}\vec{B}
+\end{equation}
+vì $\vec{m}$ và $\vec{B}$ đều hướng dọc theo trục $Oz$ nên lực tác dụng lên quả cầu là:
+\begin{equation*}
+  \vec{F}(t)=m\frac{dB}{dz}\hat{z}
+\end{equation*}
+do đó:
+\begin{equation*}
+  \vec{F}=-\frac{2\pi a^{3}}{\mu_{0}}B\frac{dB}{dz}\hat{z}=-\frac{\pi a^{3}}{\mu_{0}}\frac{dB^{2}}{dz}\hat{z}
+\end{equation*}
+thay \eqref{eq:67} vào ta được:
+\begin{equation}
+  \label{eq:69}
+  \vec{F}(t)=-\frac{\pi a^{3}}{\mu_{0}}\frac{d}{dz}\left[\frac{\mu_{0}^{2}I_{0}^{2}b^{4}}{4(b^{2}+z^{2})^{3}}\cos^{2}\omega t\right]=\frac{3\pi a^{3}b^{4}z}{2(b^{2}+z^{2})^{4}}\mu_{0}I_{0}^{2}\cos^{2}\omega t\hat{z}
+\end{equation}
+mặt khác:
+\begin{equation*}
+  \langle \cos^{2}\omega t \rangle=\frac{1}{2\pi/\omega}\int_{0}^{2\pi/\omega}\cos^{2}\omega tdt=\frac{1}{2}
+\end{equation*}
+do đó:
+\begin{equation}
+  \label{eq:610}
+  \langle F \rangle=\frac{1}{2\pi/\omega}\int_{0}^{2\pi/\omega}\vec{F}dt=\frac{3\pi a^{3}b^{4}h}{4(b^{2}+h^{2})^{4}}\mu_{0}I_{0}^{2}\hat{z}
+\end{equation}
+phương trình cân bằng:
+\begin{equation}
+  \label{eq:611}
+  \langle F \rangle = G
+\end{equation}
+từ đây ta tìm được:
+\begin{equation}
+  \label{eq:611}
+  I_{0}=\sqrt{\frac{4G(b^{2}+h^{2})^{4}}{3\pi a^{3}b^{4}\mu_{0} h}}
+\end{equation}
+
+\noindent\textbf{4.} Thay \eqref{eq:66} vào \eqref{eq:67} ta tìm được  mật đồ dòng điện bề mặt gần đúng trên quả cầu dẫn. Do đó, mật độ dòng điện trong bề dày đặc trưng của quả cầu là:
+\begin{equation}
+  \label{eq:613}
+  \vec{J}=\frac{\vec{i}}{\delta}=\left(-\frac{3B}{2\mu_{0}\delta}\sin\theta\right)\hat{\phi}
+\end{equation}
+theo định luật Joule, mật độ công suất nhiệt là:
+\begin{equation}
+  \label{eq:614}
+  p=\frac{J^{2}}{\sigma}=\frac{9B^{2}}{4\mu_{0}^{2}\sigma\delta^{2}}\sin^{2}\theta
+\end{equation}
+do đó, tổng công suất toả nhiệt là:
+\begin{equation}
+  \label{eq:615}
+  P(t)=\int pdV=\int p 2\pi r^{2}\sin\theta drd\theta=\frac{9\pi B^{2}}{2\mu_{0}^{2}\sigma \delta^{2}}\int_{a-\delta}^{a}r^{2}dr\int_{0}^{\pi}\sin^{3}\theta d\theta
+\end{equation}
+trong đó:
+\begin{equation}
+  \label{eq:616}
+  \int_{a-\delta}^{a}r^{2}dr=\frac{1}{3}[a^{3}-(a-\delta)^{3}]\approx a^{2}\delta
+\end{equation}
+và:
+\begin{equation}
+  \label{eq:617}
+  \int_{0}^{\pi}\sin^{3}\theta d\theta=\int_{-1}^{1}(1-\cos^{2}\theta)d\cos\theta=\frac{4}{3}
+\end{equation}
+do đó:
+\begin{equation}
+  \label{eq:618}
+  P(t)=6\pi a^{2}\frac{B^{2}}{\mu_{0}^{2}\sigma\delta}
+\end{equation}
+thay \eqref{eq:67} và $\delta=\sqrt{\dfrac{2}{\omega\mu_{0}\sigma}}$ vào \eqref{eq:618} ta được:
+\begin{equation}
+  \label{eq:619}
+  P(t)=\frac{3}{4}\frac{\pi a^{2}b^{4}I_{0}^{2}}{(b^{2}+h^{2})^{3}}\sqrt{\frac{2\omega\mu_{0}}{\sigma}}\cos^{2}\omega t
+\end{equation}
+vì vậy, công suất toả nhiệt trung bình là:
+\begin{equation}
+  \label{eq:620}
+  \langle P \rangle = \frac{3}{8}\frac{\pi a^{2}b^{4}I_{0}^{2}}{(b^{2}+h^{2})^{3}}\sqrt{\frac{2\omega\mu_{0}}{\sigma}}
+\end{equation}
+

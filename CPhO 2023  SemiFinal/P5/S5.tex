@@ -1,0 +1,145 @@
+\noindent\textbf{1.} Khi hạt chuyển động tròn đều trong mặt phẳng vuông góc với trục $Oz$, nó không chịu tác dụng của lực nào trên phương $Oz$, do đó:
+\begin{equation}
+  \label{eq:51}
+  \hat{z}\cdot e\vec{E}=\frac{ep}{4\pi\varepsilon_{0}r_{0}^{3}}(3\cos^{2}\theta_{0}-1)=0
+\end{equation}
+suy ra:
+\begin{equation}
+  \label{eq:52}
+  \cos\theta_{0}=\pm\frac{\sqrt{3}}{3}
+\end{equation}
+và vì hạt chuyển động tròn, lực tác dụng lên nó trong mặt phẳng $Oxy$ phải có phương hướng tâm. Phương trình \eqref{eq:52} chỉ có hai nghiệm, đó là:
+\begin{equation}
+  \label{eq:53}
+  F=\frac{-3ep}{4\pi\varepsilon_{0}r_{0}^{3}}\cos\theta_{0}\sin\theta_{0}>0
+\end{equation}
+trong phương trình \eqref{eq:52} chỉ có một nghiệm thoả mãn yêu cầu $\cos\theta_{0}<0$, tức là ta có:
+\begin{equation}
+  \label{eq:54}
+  \cos\theta_{0}=-\frac{\sqrt{3}}{3} \implies \theta_{0}=\pi-\arccos\frac{\sqrt{3}}{3}
+\end{equation}
+bán kính quỹ đạo của hạt là $R=r_{0}\sin\theta_{0}$, thay \eqref{eq:53} vào phương trình của định luật II Newton:
+
+\begin{equation}
+  \label{eq:55}
+  F=m\frac{v_{0}^{2}}{R}
+\end{equation}
+ta có:
+\begin{equation*}
+  v_{0}=\sqrt{\frac{FR}{m}}=\sqrt{-\frac{3eq}{4\pi\varepsilon_{0}mr_{0}^{2}}\cos\theta_{0}\sin^{2}\theta_{0}}=\sqrt{-\frac{3eq}{4\pi\varepsilon_{0}r_{0}^{2}}\cos\theta_{0}(1-\cos^{2}\theta_{0})}
+\end{equation*}
+sử dụng \eqref{eq:54} ta được:
+\begin{equation}
+  \label{eq:56}
+  v_{0}=\sqrt{\frac{\sqrt{3}eq}{6\pi\varepsilon_{0}mr_{0}^{2}}}
+\end{equation}
+
+\noindent\text{2a.} Momen động lượng của hạt là:
+\begin{equation}
+  \label{eq:57}
+  \vec{L}=\vec{r}\times m \vec{v}=\vec{r}\times m(\dot{r}\hat{r}+r\dot{\theta}\hat{\theta})=mr^{2}\dot{\theta}\hat{n}
+\end{equation}
+momen lực tác dụng lên hạt:
+\begin{equation}
+  \label{eq:58}
+  \tau=\vec{r}\times e\vec{E}=-\frac{e}{4\pi\varepsilon_{0}r^{3}}\vec{r}\times\vec{p}=\frac{ep\sin\theta}{4\pi\varepsilon_{0}r^{2}}\hat{n}
+\end{equation}
+với $\hat{n}=\hat{r}\times\hat{\theta}$. Phương trình chuyển động của hạt:
+\begin{equation}
+  \label{eq:59}
+  \frac{dL}{dt}=\frac{d(mr^{2}\dot{\theta})}{dt}=\frac{ep\sin\theta}{4\pi\varepsilon_{0}r^{2}}
+\end{equation}
+nhân vế theo vế phương trình \eqref{eq:59} với $L=mr^{2}\dot{\theta}$ ta được:
+\begin{equation*}
+  L\frac{dL}{dt}=\frac{ep\sin\theta}{4\pi\varepsilon_{0}r^{2}}\cdot mr^{2}\frac{d\theta}{dt}=\frac{mep\sin\theta}{5\pi\varepsilon_{0}}\frac{d\theta}{dt}
+\end{equation*}
+điều này dẫn tới:
+\begin{equation*}
+  \frac{dL^{2}}{dt}=-\frac{d}{dt}\left(\frac{mep}{2\pi\varepsilon_{0}}\cos\theta\right)
+\end{equation*}
+suy ra:
+\begin{equation}
+  \label{eq:510}
+  L^{2}+\frac{mep}{2\pi\varepsilon_{0}}\cos\theta=\text{const}
+\end{equation}
+hạt đứng yên tại $t=0$, nghĩa là:
+\begin{equation}
+  \label{eq:511}
+  L^{2}=\frac{mep}{2\pi\varepsilon_{0}}(\cos\theta_{0}-\cos\theta)
+\end{equation}
+
+\noindent\textbf{2b.} Điện thế do lưỡng cực điện tạo ra:
+\begin{equation*}
+  \varphi=\frac{\vec{p}\cdot\vec{r}}{4\pi\varepsilon_{0}r^{3}}=\frac{p\cos\theta}{4\pi\varepsilon_{0}r^{2}}
+\end{equation*}
+bảo toàn năng lượng:
+\begin{equation}
+  \label{eq:512}
+  \frac{1}{2}mv^{2}+e\varphi=\frac{1}{2}m(\dot{r}^{2}+r^{2}\dot{\theta}^{2})+\frac{ep\cos\theta}{4\pi\varepsilon_{0}r^{2}}=\frac{ep\cos\theta_{0}}{4\pi\varepsilon_{0}r_{0}^{2}}
+\end{equation}
+hay dưới dạng động lượng $p_{r}=mv_{r}$ và momen động lượng $L=mr^{2}\dot{\theta}$:
+\begin{equation}
+  \label{eq:513}
+  \frac{p_{r}^{2}}{2m}+\frac{L^{2}}{2mr^{2}}+\frac{ep\cos\theta}{4\pi\varepsilon_{0}r^{2}}=\frac{ep\cos\theta_{0}}{4\pi\varepsilon_{0}r_{0}^{2}}
+\end{equation}
+thay \eqref{eq:511} vào \eqref{eq:513} ta được:
+\begin{equation*}
+  v_{r}^{2}=\frac{ep\cos\theta_{0}}{2\pi m\varepsilon_{0}}\left(\frac{1}{r_{0}^{2}}-\frac{1}{r^{2}}\right)
+\end{equation*}
+suy ra:
+\begin{equation}
+  \label{eq:514}
+  v_{r}=\sqrt{\frac{ep\cos\theta_{0}}{2\pi m\varepsilon_{0}}\left(\frac{1}{r_{0}^{2}-\frac{1}{r^{2}}}\right)}
+\end{equation}
+
+\noindent\textbf{2c.} Vì $v_{r}^{2}\geqslant 0$ nên từ \eqref{eq:514} ta có:
+\begin{equation*}
+  \text{khi}\theta_{0}<\frac{\pi}{2}, r\geqslant r_{0}
+\end{equation*}
+lúc này, $v_{r}=\dot{r}=\sqrt{\dfrac{ep\cos\theta_{0}}{2\pi m\varepsilon_{0}}\left(\dfrac{1}{r_{0}^{2}}-\dfrac{1}{r^{2}}\right)}$ tăng khi $r$ tăng. Chuyển động của hạt không bị giới hạn.
+\begin{equation*}
+  \text{khi}\theta_{0}>\frac{\pi}{2}, r\leqslant r_{0}
+\end{equation*}
+\begin{equation*}
+  \text{khi}\theta_{0}=\frac{\pi}{2}, r=r_{0}
+\end{equation*}
+trong cả hai trường hợp trên, chuyển động của hạt đều bị giới hạn. Do đó, điều kiện cần tìm là:
+\begin{equation}
+  \label{eq:515}
+  \theta_{0}\geqslant\frac{\pi}{2}
+\end{equation}
+nếu $\theta_{0}=\dfrac{pi}{2}$, chuyển động của hạt bị giới hạn hoàn toàn, $v_{r}=\dot{r}=0$. Khoảng cách từ hạt đến gốc toạ độ không đổi trong suốt quá trình chuyển động và bằng $r_{0}$; và vì $L\geqslant 0$, phương trình \eqref{eq:511} đòi hỏi:
+\begin{equation}
+  \label{eq:516}
+  L^{2}=-\frac{mep}{2\pi\varepsilon_{0}}\cos\theta\geqslant 0
+\end{equation}
+như vậy, chuyển động của hạt thoả mãn
+\begin{equation}
+  \label{eq:517}
+  r=r_{0}, \cos\theta\leqslant 0
+\end{equation}
+có thể thấy, quỹ đạo của nó là một đường bán nguyệt có bán kính $r_{0}$ $\left(\dfrac{\pi}{2}\leqslant\theta\leqslant\dfrac{3\pi}{2}\right)$ trong mặt phẳng thẳng đứng.
+
+\noindent\textbf{2d.} Trong trường hợp chuyển động của hạt không bị giới hạn, phương trình \eqref{eq:514} có thể được viết lại dưới dạng:
+\begin{equation}
+  \label{eq:518}
+  \frac{dr}{dt}=\sqrt{\frac{ep\cos\theta_{0}}{2\pi\varepsilon_{0}m}\left(\frac{1}{r_{0}^{2}}-\frac{1}{r^{2}}\right)}
+\end{equation}
+hay:
+\begin{equation*}
+  \sqrt{\frac{ep\cos\theta_{0}}{2\pi\varepsilon_{0}mr_{0}^{2}}dt=\frac{rdr}{\sqrt{r^{2}-r_{0}^{2}}}=d\sqrt{r^{2}-r_{0}^{2}}}
+\end{equation*}
+qua đó:
+\begin{equation}
+  \label{eq:519}
+  \sqrt{r^{2}-r_{0}^{2}}-\sqrt{\frac{ep\cos\theta_{0}}{2\pi\varepsilon_{0}mr_{0}^{2}}}t=\text{const}
+\end{equation}
+sử dụng điều kiện bao đầu $r(t=0)=r_{0}>0$, ta có:
+\begin{equation*}
+  \sqrt{r^{2}-r_{0}^{2}}-\sqrt{\frac{ep\cos\theta_{0}}{2\pi\varepsilon_{0}mr_{0}^{2}}}t=0
+\end{equation*}
+suy ra:
+\begin{equation}
+  \label{eq:520}
+  r=\sqrt{r_{0}^{2}+\frac{ep\cos\theta_{0}}{2\pi\varepsilon_{0}mr_{0}^{2}}t^{2}}
+\end{equation}

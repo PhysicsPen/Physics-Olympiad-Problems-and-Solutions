@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{indentfirst}
+
+%%%%%%%%%% EQUATION COUNTER & REFERENCE %%%%%%%%%% 
+\usepackage{xassoccnt}
+\newcounter{totalequations}
+\DeclareAssociatedCounters{equation}{totalequations}
+\let\theOldHequation\theHequation
+\renewcommand{\theHequation}{\theOldHequation::\number\value{totalequations}}
+
+%%%%%%%%%% PAGESTYLE %%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\href{https://www.facebook.com/physicspen1111/}{\textbf{Physics Pen}}}
+\fancyhead[R]{\textbf{CPhO 40 - Vòng Bán Kết}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+%%%%%%%%%% FIRST PAGE STYLE %%%%%%%%%%
+\thispagestyle{empty}
+
+%%%%%%%%%% TITLE %%%%%%%%%%
+\begin{center}
+  \fontfamily{cmss}\fontseries{b}\LARGE\textbf{
+    Đề thi và Lời giải\\
+    Olympic Vật lý Trung Quốc năm 2023\\
+    Vòng Bán kết}
+\end{center}
+
+\begin{center}
+  \href{https://www.facebook.com/physicspen1111/}{\large{\textit{Sưu tầm và biên soạn bởi Physics Pen}}}
+\end{center}
+
+\vspace{1cm}
+
+%%%%%%%%%% PROBLEMS %%%%%%%%%%
+\noindent\textbf{Câu I:}\\
+\input{P1/P1.tex}
+
+\noindent\textbf{Câu II:}\\
+\input{P2/P2.tex}
+
+\noindent\textbf{Câu III:}\\
+\input{P3/P3.tex}
+
+\noindent\textbf{Câu IV:}\\
+\input{P4/P4.tex}
+
+\noindent\textbf{Câu V:}\\
+\input{P5/P5.tex}
+
+\noindent\textbf{Câu VI:}\\
+\input{P6/P6.tex}
+
+\noindent\textbf{Câu VII:}\\
+\input{P7/P7.tex}
+
+\noindent\textbf{Câu VIII:}\\
+\input{P8/P8.tex}
+
+\newpage
+
+%%%%%%%%%% TITLE#2 %%%%%%%%%%
+\begin{center}
+  \noindent\Large\textbf{LỜI GIẢI THAM KHẢO}
+\end{center}
+\vspace{5mm}
+
+%%%%%%%%%% SOLUTIONS %%%%%%%%%%
+\setcounter{equation}{0}
+\noindent\textbf{Câu I:}\\
+\input{P1/S1.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu II:}\\
+\input{P2/S2.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu III:}\\
+\input{P3/S3.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu IV:}\\
+\input{P4/S4.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu V:}\\
+\input{P5/S5.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu VI:}\\
+\input{P6/S6.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu VII:}\\
+\input{P7/S7.tex}
+
+\newpage
+\setcounter{equation}{0}
+\noindent\textbf{Câu VIII:}\\
+\input{P8/S8.tex}
+
+\end{document}

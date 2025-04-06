@@ -1,0 +1,95 @@
+\noindent \textbf{1a}. Gọi $v_{1}$ là khoảng cách ảnh ứng với khoảng cách vật $u_{1}$, ta có:
+\begin{equation}
+  \label{eq:11}
+  \frac{1}{u_{1}}+\frac{1}{v_{1}}=\frac{1}{F}
+\end{equation}
+độ phóng đại ngang là:
+\begin{equation}
+  \label{eq:12}
+  \frac{v_{1}}{u_{1}}=\frac{l_{1}}{l}
+\end{equation}
+từ \eqref{eq:11} và \eqref{eq:12} ta có:
+\begin{equation}
+  \label{eq:13}
+  u_{1}=F\left(1+\frac{l}{l_{1}}\right)
+\end{equation}
+
+\noindent Tương tự với khoảng cách vật $u_{2}$:
+\begin{equation}
+  \label{eq:14}
+  u_{2}=F\left(1+\frac{l}{l_{2}}\right)
+\end{equation}
+
+\noindent Như vậy ta có:
+\begin{equation}
+  \label{eq:15}
+  s=u_{2}-u_{1}=F\left(\frac{l}{l_{2}}-\frac{l}{l_{1}}\right)
+\end{equation}
+suy ra:
+\begin{equation}
+  \label{eq:16}
+  F=\frac{s}{\frac{l}{l_{2}}-\frac{l}{l_{1}}}=\frac{sl_{1}l_{2}}{l(l_{1}-l_{2})}
+\end{equation}
+
+\noindent \textbf{1b}. Thay \eqref{eq:16} vào \eqref{eq:13} ta được:
+\begin{equation}
+  \label{eq:17}
+  u_{1}=\frac{sl_{2}(l_{1}+l)}{l(l_{1}-l_{2})}
+\end{equation}
+
+\noindent \textbf{2a}. Giả sử khi chụp ảnh, khoảng cách vật và khoảng cách ảnh tương ứng với thấu kính $O_{1}$ lần lượt là $u_{1}$, $v_{1}$ và tương ứng với thấu kính $O_{2}$ lần lượt là $u_{2}$, $v_{2}$. Ta có:
+\begin{equation}
+  \label{eq:18}
+  \frac{1}{u_{1}}+\frac{1}{v_{1}}=\frac{1}{f_{1}}\quad,\quad\frac{1}{u_{2}}+\frac{1}{v_{2}}=\frac{1}{f_{2}}
+\end{equation}
+độ phóng đại ngang của mỗi thấu kính lần lượt là:
+\begin{equation}
+  \label{eq:19}
+  m_{1}=-\frac{v_{1}}{u_{1}}\quad,\quad m_{2}=-\frac{v_{2}}{u_{2}}
+\end{equation}
+kết hợp \eqref{eq:18} và \eqref{eq:19} ta được:
+\begin{equation}
+  \label{eq:110}
+  \frac{1}{m_{1}}=1-\frac{u_{1}}{f_{1}}\quad,\quad\frac{1}{m_{2}}=1-\frac{u_{2}}{f_{2}}
+\end{equation}
+nghịch đảo độ phóng đại của hệ thấu kính là:
+\begin{equation}
+  \label{eq:111}
+  \frac{1}{m}=\frac{1}{m_{1}}\frac{1}{m_{2}}=\left(1-\frac{u_{1}}{f_{1}}\right)\left(1-\frac{u_{2}}{f_{2}}\right)
+\end{equation}
+vì ảnh của thấu kính $O_{1}$ là vật của thấu kính $O_{2}$ và khoảng cách giữa hai thấu kính là $d$ nên
+\begin{equation}
+  \label{eq:112}
+  u_{2}=d-u_{1}=d-\frac{u_{1}f_{1}}{u_{1}-f_{1}}
+\end{equation}
+thay \eqref{eq:112} vào \eqref{eq:111} ta có:
+\begin{equation}
+  \label{eq:113}
+  \frac{1}{m}=\left(1-\frac{u_{1}}{f_{1}}\right)\left(1-\frac{d-\frac{u_{1}f_{1}}{u_{1}-f_{1}}}{f_{2}}\right)=1-\frac{d}{f_{2}}-u_{1}\left(\frac{1}{f_{1}}+\frac{1}{f_{2}}-\frac{d}{f_{1}f_{2}}\right)
+\end{equation}
+cho $m=1$, ta tìm được khoảng cách từ $H$ đến $O_{1}$:
+\begin{equation}
+  \label{eq:114}
+  u_{H}=u_{1}=\frac{f_{1}}{d-f_{1}-f_{2}}
+\end{equation}
+thay \eqref{eq:112} và \eqref{eq:114} vào \eqref{eq:18} ta tìm được khoảng cách từ $H'$ đến $O_{2}$:
+\begin{equation}
+  \label{eq:115}
+  v_{H'}=\frac{f_{2}d}{d-f_{1}-f_{2}}
+\end{equation}
+
+\noindent \textbf{2b}. Khi vật nằm tại vô cùng, ảnh của nó qua hệ thấu kính sẽ nằm tại tiêu điểm ảnh. Giả sử $u_{1}=\infty$, $v_{1}=f_{1}$, $u_{2}=d-v_{1}$, thay vào \eqref{eq:18} ta được:
+\begin{equation}
+  \label{eq:116}
+  v_{F'}=v_{2}=\frac{(d-f_{1})f_{2}}{d-f_{1}-f_{2}}
+\end{equation}
+kết hợp \eqref{eq:115} và \eqref{eq:116} ta tìm được tiêu cự ảnh của camera:
+\begin{equation}
+  \label{eq:117}
+  F'=v_{F'}-v_{H'}=-\frac{f_{1}f_{2}}{d-f_{1}-f_{2}}
+\end{equation}
+thực hiện tương tự ta cũng sẽ tìm được tiêu cự vật của camera:
+\begin{equation}
+  \label{eq:118}
+  F=-\frac{f_{1}f_{2}}{d-f_{1}-f_{2}}=F'
+\end{equation}
