@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=1.5cm,right=1.5cm]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{indentfirst}
+
+%%%%%%%%%% DEFINE COLOR %%%%%%%%%%
+\usepackage{xcolor} 
+\definecolor{charcoal-blue}{RGB}{44, 64, 89}
+
+%%%%%%%%%% EQUATION COUNTER & REFERENCE %%%%%%%%%% 
+\usepackage{xassoccnt}
+\newcounter{totalequations}
+\DeclareAssociatedCounters{equation}{totalequations}
+\let\theOldHequation\theHequation
+\renewcommand{\theHequation}{\theOldHequation::\number\value{totalequations}}
+
+%%%%%%%%%% PAGESTYLE %%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\href{https://www.facebook.com/physicspen1111/}{\includegraphics[width=0.15\textwidth]{Figures/Logo 2.png}}}
+\fancyhead[R]{\color{charcoal-blue}{\vspace{0.05cm}\fontsize{13}{18}\selectfont\textbf{BelPhO 2025 - Chung kết Khối 11}}}
+\fancyfoot[C]{\thepage}
+\setlength{\headsep}{30pt}
+
+
+\begin{document}
+
+%%%%%%%%%% FIRST PAGE STYLE %%%%%%%%%%
+\thispagestyle{plain}
+
+%%%%%%%%%% TITLE %%%%%%%%%%
+\begin{center}
+  \fontfamily{cmss}\fontseries{b}\LARGE{\textbf{Đề thi và Lời giải\\
+      Olympic Vật lý Belarus năm 2025\\
+      Vòng Chung kết - Khối 11}}
+\end{center}
+
+
+%%%%%%%%%% PROBLEMS %%%%%%%%%%
+\subsection*{Câu 1: Sự mất mát năng lượng}
+\input{P1/P1.tex}
+
+\newpage
+\subsection*{Câu 2: Tương tác của các nam châm hình trụ}
+\input{P2/P2.tex}
+
+\subsection*{Câu 3: Bọt rượu Champagne}
+\input{P3/P3.tex}
+
+\newpage
+\quad\\
+\begin{center}
+  \vspace{-1cm}
+  \noindent\LARGE\textbf{LỜI GIẢI THAM KHẢO}
+\end{center}
+
+\subsection*{Câu 1: Sự mất mát năng lượng}
+\input{P1/S1.tex}
+
+\subsection*{Câu 2: Tương tác của các nam châm hình trụ}
+\input{P2/S2.tex}
+
+\subsection*{Câu 3: Bọt rượu Champagne}
+\input{P3/S3.tex}
+
+\end{document}
