@@ -1,0 +1,129 @@
+\subsubsection*{Phần A: Mạch hở}
+\noindent\textbf{1.} Đối với vật dẫn ở trạng thái cân bằng tĩnh điện, hợp lực tác dụng lên các điện tích tự do bằng không. Do đó, các điện tích sẽ tự sắp xếp lại cho đến khi các lực tác dụng lên mỗi điện tích tự triệt tiêu, tức:
+\begin{equation*}
+  \vec{F} = q\left( \vec{E} + \vec{v} \times \vec{B} \right) = \vec{0}
+\end{equation*}
+Suy ra:
+\begin{equation*}
+  \vec{E} = -\vec{v} \times \vec{B} = -(\omega \hat{z} \times \vec{r}) \times (B \hat{z}) = -r \omega B \hat{r}
+\end{equation*}
+Khi này, hiệu điện thế giữa mép trong và mép ngoài của đĩa được tính bởi:
+\begin{equation*}
+  V_0 = -\int \vec{E}  d\vec{l} = \int_{r_1}^{r_2} r\omega B \, dr = \frac{1}{2} \omega B \left( r_2^2 - r_1^2 \right)
+\end{equation*}
+
+\noindent\underline{Cách khác}: Theo định luật Faraday:
+\begin{equation*}
+  V_0 = -\frac{d\varphi_m}{dt} = \frac{d}{dt} \left( B  \frac{\theta}{2\pi} \pi (r_2^2 - r_1^2) \right) = \frac{1}{2} \omega B (r_2^2 - r_1^2)
+\end{equation*}
+Trong đó $\varphi_m$ là từ thông và $\theta$ là góc quét (do đó $\omega = d\theta/dt$). Từ đây ta có thể xác định biểu thức của điện trường.\\
+
+\noindent\textbf{2.} Chia đĩa thành các ống trụ có độ dày $dr$, ống trụ có bán kính $r$ sẽ có điện trở:
+\begin{equation*}
+  dR = \frac{1}{\sigma  2\pi r h} \, dr
+\end{equation*}
+Do đó, điện trở của đĩa là:
+\begin{equation*}
+  R_0 = \int_{r_1}^{r_2} \frac{dr}{2\pi r h \sigma} = \frac{1}{2\pi h \sigma} \ln \frac{r_2}{r_1}
+\end{equation*}
+
+\subsubsection*{Phần B: Phát điện}
+\noindent\textbf{1.} Đĩa hoạt động như một nguồn điện không lí tưởng, với điện trở trong $R_0$, do đó:
+\begin{equation*}
+  V = V_0 - R_0 I = V_0 \left(1 - \frac{R_0}{R_0 + R} \right)
+\end{equation*}
+Trong đó $I$ là cường độ dòng điện chạy qua đĩa và điện trở $R$.\\
+
+\noindent\textbf{2.} Công suất tổng cộng của nguồn:
+\begin{equation*}
+  P_0 = V_0 I = \frac{V_0^2}{R_0 + R}
+\end{equation*}
+Công suất điện:
+\begin{equation*}
+  P = VI = V_0 I - R_0 I^2 = \frac{V_0^2}{R_0 + R} \left(1 - \frac{R_0}{R_0 + R} \right)
+\end{equation*}
+
+\noindent\textbf{3.} Hiệu suất của nguồn:
+
+\begin{equation*}
+  \eta = \frac{P}{P_0} = 1 - \frac{R_0}{R_0 + R}
+\end{equation*}
+
+\noindent\textbf{4.} Công suất điện đạt cực đại khi:
+\begin{equation*}
+  \frac{dP}{dI} = V_0 - 2 R_0 I = 0 \Rightarrow I = \frac{V_0}{2 R_0}
+\end{equation*}
+Công suất cực đại:
+\begin{equation*}
+  P_{\text{max}} = \frac{V_0^2}{4 R_0}
+\end{equation*}
+Và hiệu suất cực đại:
+\begin{equation*}
+  \eta = \frac{P_{\text{max}}}{P_0} = \frac{1}{2}
+\end{equation*}
+
+\subsubsection*{Phần C: Phanh tái sinh}
+\noindent\textbf{1.} Tổng động năng $K$ của tàu là tổng của các thành phần:
+\begin{equation*}
+  K = \frac{1}{2} M v^2 + \frac{N}{2} m v^2 + \frac{N}{2} I \omega^2
+\end{equation*}
+Trong đó $I = \frac{1}{2} m (r_2^2 + r_1^2)$ là moment quán tính của một bánh xe quanh trục xe. Điều kiện lăn không trượt:
+\begin{equation*}
+  v = \omega r_2
+\end{equation*}
+Đặt:
+\begin{equation*}
+  I_{\text{eff}} = M r_2^2 + \frac{3N}{2} m r_2^2 + \frac{N}{2} I
+\end{equation*}
+Và động năng có thể được viết lại dưới dạng:
+\begin{equation*}
+  K = \frac{1}{2} I_{\text{eff}} \omega^2
+\end{equation*}
+
+\noindent\textbf{2.} Với $Nm \ll N$, ta có:
+\begin{equation*}
+  I_{\text{eff}} \approx M r_2^2
+\end{equation*}
+\begin{equation*}
+  K \approx \frac{1}{2} M r_2^2 \omega^2
+\end{equation*}
+
+\noindent\textbf{3.} Định luật bảo toàn năng lượng:
+\begin{equation*}
+  \frac{dK}{dt} = I_{\text{eff}} \omega \frac{d\omega}{dt} = -P = - \frac{V_0^2}{R_0 + R} = - \frac{\omega^2 B^2 (r_2^2 - r_1^2)}{4(R_0 + R)}
+\end{equation*}
+Đặt:
+\begin{equation*}
+  \tau = \frac{4 (R_0 + R) I_{\text{eff}}}{B^2 (r_2^2 - r_1^2)}
+\end{equation*}
+Ta có:
+\begin{equation*}
+  \frac{d\omega}{dt} = - \frac{\omega}{\tau}
+\end{equation*}
+Nghiệm của phương trình này có dạng:
+\begin{equation*}
+  \omega(t) = \omega_0 \exp \left( - \frac{t}{\tau} \right)
+\end{equation*}
+Trong đó $\omega_0$ là tốc độ góc tại $t = 0$.\\
+
+\noindent\textbf{4.} Ta có:
+\begin{equation*}
+  \frac{1}{2} \omega_0 = \omega_0 \exp \left( - \frac{t_{1/2}}{\tau} \right) \Rightarrow t_{1/2} = \tau \ln 2
+\end{equation*}
+
+\noindent\textbf{5.} Do không có điện trở ngoài, toàn bộ công suất toả ra bởi bánh xe sẽ được chuyển thành nhiệt nhờ quá trình toả nhiệt trên điện trở. Giả sử nhiệt được phân bố đều trên mỗi bánh xe và tại thời điểm ban đầu, nhiệt độ của các bánh xe bằng với nhiệt độ môi trường $T = 298\,K$.
+Xem nhiệt lượng hao tổng ra môi trường bên ngoài là không đáng kể. Tổng năng lượng của tàu là:
+\begin{equation*}
+  \Delta E = \frac{1}{2} I_{\text{eff}} \omega^2 \approx \frac{1}{2} M v^2 = 6{,}2.10^8 \text{ J}
+\end{equation*}
+Tổng nhiệt lượng cần thiết để làm nóng các bánh xe:
+\begin{equation*}
+  \Delta E = N c m \Delta T = N  2{,}0.10^8 \text{ J}
+\end{equation*}
+Như vậy, cần ít nhất $N = 4$ bánh xe.\\
+
+\noindent\textbf{6.} Tốc độ góc $\omega$ giảm dần theo thời gian, do đó gia tốc là cực đại tại $t = 0$:
+\begin{equation*}
+  a_{\text{max}} = \left. \frac{dv}{dt} \right|_{t = 0} = -\frac{r_2 \omega_0}{\tau} = -\frac{v B^2 (r_2^2 - r_1^2)^2}{2 R_0 M r_2^2} = 0{,}062 \ \mathrm{m/s^2}
+\end{equation*}
+So sánh với gia tốc trọng trường $g = 10 \ \mathrm{m/s^2}$, có thể thấy, gia tốc này là an toàn.
